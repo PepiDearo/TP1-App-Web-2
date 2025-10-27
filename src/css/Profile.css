@@ -1,0 +1,140 @@
+/* ====== Page de profil ====== */
+
+.profile-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fa;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* ====== Conteneur principal ====== */
+.profile-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 480px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ====== Avatar ====== */
+.profile-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #3273dc;
+  margin-bottom: 1rem;
+}
+
+.profile-avatar:hover {
+  transform: scale(1.03);
+  transition: 0.2s ease;
+}
+
+/* ====== Bouton upload ====== */
+.file-label .file-cta {
+  background: #3273dc;
+  color: white;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.file-label .file-cta:hover {
+  background: #2765c7;
+}
+
+/* ====== Formulaire pseudonyme ====== */
+.profile-fields {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.profile-fields .label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.profile-fields .input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.profile-fields .input:focus {
+  border-color: #3273dc;
+  outline: none;
+}
+
+.profile-fields .button {
+  width: 100%;
+  background: #3273dc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 1rem;
+}
+
+.profile-fields .button:hover {
+  background: #2765c7;
+}
+
+/* ====== Informations utilisateur ====== */
+.profile-info {
+  width: 100%;
+  text-align: left;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.profile-info p {
+  margin-bottom: 0.5rem;
+}
+
+/* ====== Message de notification ====== */
+.notification {
+  margin-top: 1.5rem;
+  background: #eaf2ff;
+  color: #2765c7;
+  padding: 0.8rem;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 2rem;
+    margin: 1rem;
+  }
+
+  .profile-avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-fields .button {
+    font-size: 1rem;
+  }
+}

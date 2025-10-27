@@ -1,0 +1,157 @@
+.inscription-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.inscription-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.inscription-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.inscription-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.tabs-container {
+  margin-bottom: 2rem;
+}
+
+.inscription-form,
+.phone-form {
+  width: 100%;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3273dc;
+}
+
+.inscription-button {
+  width: 100%;
+  padding: 12px;
+  background: #3273dc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.inscription-button:hover:not(:disabled) {
+  background: #2765c7;
+}
+
+.inscription-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.inscription-links {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.link {
+  color: #3273dc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.back-link {
+  display: block;
+  margin-top: 1rem;
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back-link:hover {
+  color: #333;
+}
+
+.error-message {
+  background: #ff3860;
+  color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.recaptcha-container {
+  margin: 1rem 0;
+}
+
+.help {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .inscription-card {
+    padding: 2rem;
+    margin: 1rem;
+  }
+  
+  .inscription-page {
+    padding: 10px;
+  }
+  
+  .inscription-title {
+    font-size: 1.75rem;
+  }
+}

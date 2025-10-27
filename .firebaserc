@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "ex02-9c6d2",
+    "tp1": "ex02-9c6d2"
+  },
+  "targets": {
+    "ex02-9c6d2": {
+      "hosting": {
+        "tp1-web": [
+          "ex02-9c6d2-f2385"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
